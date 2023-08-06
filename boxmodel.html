@@ -4,13 +4,45 @@
         <title>boxmodel</title>
         <meta charset="utf-8">
         <style>
-            h1,a { 
-                border:5px solid red;
+            body {
+                margin:0;
+            }
+            h1 {
+                text-align:center;
+                font-size:50px;
+                border-bottom:solid 1px black;
+                margin:0;
+                padding:22px;
+            }
+            #grid ol {
+                border-right:1px black solid;
+                width:100px;
+                margin:0;
+                padding-left: 35px;
+                padding-top: 30px;
+            }
+            #grid {
+                display:grid;
+                grid-template-columns:150px 1fr;
+            }
+            #grid #article {
+                padding-left:14px;
             }
         </style>
     </head>
     <body>
-        <h1>HTML</h1>
-        Hypertext Markup Language(<a href="https://www.freecodecamp.org/news/what-is-html-definition-and-meaning/">html</a>)
+        <h1>WEB</h1>
+            <div id="grid">
+                <ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ol>
+                <div id="article">
+                <h2>CSS</h2>
+                <p>CSS (Cascading Style Sheets) allows you to create great-looking web pages, but how does it work under the hood? This article explains what CSS is with a simple syntax example and also covers some key terms about the language.
+                </p>
+                </div>
+            </div>        
     </body>
 </html>
